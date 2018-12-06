@@ -1,0 +1,491 @@
+/** Start of style for all size screen **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:black;
+  padding:0px;
+}
+#page-wrapper {
+  margin:0px;
+}
+
+/** START - style for navigation bar **/
+#header {
+  width: 100%;
+  background-color: black;
+  color:white;
+  position: fixed;
+  top: 0;
+  z-index:2;
+}
+
+
+img {
+  width:40%;
+}
+
+
+#header-image {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/** END - style for navigation bar **/
+
+section {
+  padding:15%;
+  display:flex;
+  color:white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1516648612766-d5f00245f63e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=450c0617b1600040d3b7f84292a24196&auto=format&fit=crop&w=1226&q=80);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#main {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/**START - style for home page **/
+#heading {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:30%;
+}
+
+/**END - style for home page **/
+
+/**START - style for product info page **/
+#product-info  {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+}
+/**END - style for product info page **/
+
+/**START - style for video tutorial page **/
+#video-tutorial {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  background-image: url(https://images.unsplash.com/photo-1516648612766-d5f00245f63e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=450c0617b1600040d3b7f84292a24196&auto=format&fit=crop&w=1226&q=80);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/**END - style for video tutorial page **/
+
+/** End of style for all size screen **/
+
+
+/** Start - style for large size screens **/
+@media (min-width:451px){
+
+ /** START - style for navigation bar **/
+ #header {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+ }
+
+ #header-image {
+   width:10%;
+ }
+
+ nav {
+  font-weight: 500;
+  width:80%;
+ }
+
+
+ ul {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+ /** END - style for navigation bar **/
+
+ /**START - style for home page **/
+
+ #email-container p{
+  margin-bottom:3%;
+  font-size:2em;
+ }
+
+
+ #heading h2{
+    font-size:7em;
+    text-align:center;
+ }
+
+ #heading p{
+  text-align:center;
+  font-size: 4em;
+  margin-bottom:10%;
+ }
+
+ form input {
+  margin-bottom: 5%;
+ }
+
+ #email {
+  width:100%;
+  padding:4%
+ }
+
+ #submit {
+  color:white;
+  background-color:#6c2c7c;
+  padding:4%;
+  border:none;
+ }
+ /**END - style for home page **/
+
+  /**START - style for product info page **/
+  #product-info h2{
+    font-size:5em;
+    margin-bottom:10%;
+  }
+
+  table, th, td {
+    border: 1px solid #ddd;
+    padding: 1%;
+  }
+
+  #product-info table {
+     border-collapse: collapse;
+     width: 80%;
+     background-color:#fff;
+     color:black;
+     opacity:0.8;
+  }
+
+  th {
+    width: 20%;
+    background-color:#ddd;
+    border: 1px solid white;
+  }
+
+  td {
+    width: 40%;
+  }
+
+  /**END - style for product info page **/
+
+  /**START - style for video tutorial page **/
+  #video-tutorial h2{
+    font-size:4em;
+    padding-bottom:10%;
+  }
+  /**END - style for video tutorial page **/
+
+  /**START - style for order page **/
+  #pricing a{
+    background:#6c2c7c;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:2em;
+      padding: 0.3em 2em 0;
+      cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  #pricing a:hover{
+    color:black;
+    background-color:#fff;
+    opacity:0.4;
+  }
+  #pricing a:before,#pricing a:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #6c2c7c;
+    transition:400ms ease all;
+  }
+  #pricing a:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  #pricing a:hover:before,#pricing a:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  /**END - style for order page **/
+
+}
+/** END - style for large screen size **/
+
+/** START - style for small size screen **/
+@media (max-width: 450px) {
+  /** START - style for navigation bar **/
+  #header {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    width:100%;
+    height:200px;
+  }
+
+  #header-image {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+  }
+
+  img {
+    width:100%;
+  }
+
+  nav {
+    font-weight: 500;
+    width:100%;
+  }
+
+  ul {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    margin-bottom:3%;
+  }
+  /** END - style for navigation bar **/
+
+  /**START - style for home page **/
+  #email-container p{
+    margin-bottom:3%;
+    font-size:1.4em;
+    text-align:center;
+  }
+
+
+
+  #heading h2{
+    text-align:center;
+    font-size:3em;
+  }
+
+  #heading p{
+    font-size: 1.7em;
+    text-align:center;
+    margin-bottom:10%;
+  }
+
+
+  form input {
+    margin-bottom: 10%;
+  }
+
+  #email {
+    padding:10%;
+  }
+
+  #submit {
+    color:white;
+    background-color:#6c2c7c;
+    padding:10%;
+    border:none;
+  }
+  /**END - style for home page **/
+
+  /** START -style for product info page **/
+  #product-info{
+    height:100vh;
+    padding-top:30%;
+    }
+
+  #product-info h2{
+    font-size:3em;
+    margin-top:55%;
+    margin-bottom:10%;
+  }
+
+  #table {
+    overflow-y:auto;
+  }
+
+  table, th, td {
+    font-size:0.8em;
+    border: 1px solid #ddd;
+    padding: 1%;
+  }
+
+  #product-info table {
+     border-collapse: collapse;
+     width: 100%;
+     background-color:#fff;
+     color:black;
+     opacity:0.8;
+  }
+
+  th {
+    width: 20%;
+    background-color:#ddd;
+    border: 1px solid white;
+  }
+
+  td {
+    width: 40%;
+  }
+  /** END -style for product info page **/
+
+  /** START - style for video tutorial page **/
+  #video-tutorial {
+    width:100%;
+      padding: 15% 0px 0px;
+  }
+
+  #video-tutorial h2{
+    font-size:2.3em;
+    padding-bottom:10%;
+  }
+  /** END - style for video tutorial page **/
+
+  /** START - style for order page **/
+  #pricing a{
+    background:#6c2c7c;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.7em;
+      padding: 0.3em 2em 0;
+      cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+
+  #pricing a:hover{
+    color:black;
+    background-color:#fff;
+    opacity:0.4;
+  }
+
+  #pricing a:before,#pricing a:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #6c2c7c;
+    transition:400ms ease all;
+  }
+  #pricing a:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+
+  #pricing a:hover:before,#pricing a:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  /** END - style for order page **/
+
+  /** START - style for screens with height between  640px and 736px **/
+  @media (max-height: 736px){
+    #heading {
+      margin-top:50%;
+    }
+
+    #heading h2{
+      text-align:center;
+      font-size:3em;
+    }
+    #video-tutorial h2{
+      margin-top:50%;
+    }
+  }
+
+  /** END - style for screens with height between 640 and 736px**/
+  /** START - style for screens with height between 568 and 640px **/
+  @media (max-height: 640px){
+    #heading {
+      margin-top:40%;
+    }
+
+    #video-tutorial h2{
+      margin-top:40%;
+    }
+  }
+  /** END - style for screens with height between 568 and 640px **/
+
+  /** START - style for screens with height less then 568px **/
+  @media (max-height:568px){
+   #header {
+     height:150px;
+   }
+
+    #heading {
+      margin-top:50%;
+    }
+
+    #heading h2{
+      text-align:center;
+      font-size:2.7em;
+    }
+
+    #heading p{
+      font-size: 1.2em;
+      text-align:center;
+      margin-bottom:10%;
+    }
+
+    #pricing a{
+     font-size: 1.4em;
+    }
+
+  }
+ /** END - style for screens with height less then 568px **/
+
+}
+/** END - style for small size screen **/
